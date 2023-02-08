@@ -32,6 +32,7 @@ main {
   header nav li {
     flex: 1;
     text-align: center;
+    display: inline-block;
   }
 
   .banner {
@@ -48,7 +49,8 @@ main {
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: center;  
+    text-align: center;
   }
   .navbar ul li {
     list-style: none;
@@ -59,7 +61,7 @@ main {
 
   .navbar ul li a {
     text-decoration: none;
-    color: #000;
+    color: b#000000;
   }
 
   .navbar ul li::after{
