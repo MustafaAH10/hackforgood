@@ -1,3 +1,10 @@
+* {
+  background-image: url('Websitebackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 main {
     display: flex;
     flex-direction: column;
