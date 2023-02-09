@@ -2,16 +2,16 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Medical Practitioner Sign up</title>
+  <title>Patient Sign up</title>
 </head>
 <body>
 
   <header>
-    <h1>Medical Practitioner Sign up</h1>
+    <h1>Patient Sign up</h1>
   </header>
 
   <main>
-    <form action = "employer-sign-up.php" method = "post">
+    <form action = "patient-sign-up.php" method = "post">
     <label for="first_name">First Name:</label>
     <input type="first_name" id ="first_name" name="first_name" required>
     <br><br>
@@ -22,7 +22,15 @@
     <input type="date" id ="dob" name="dob" required>
     <br><br>
     <label for="disabilities">Enter disabilities:</label>
-    <input type="disabilities" id ="disabilities" name="disabilities" required>
+    <form action="patient-sign-up.php" method="post">
+        <select multiple name="selected_options[]">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+      
     <br><br>
     <label for="phone">Contact number:</label>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required><br><br>
