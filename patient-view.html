@@ -14,15 +14,21 @@
                   <li><a href="patient-view.html">Home</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Listings</a>
-                    <ul id = "listings" name = "listings" class="dropdown-menu">
-                      <li><a action = "general.php" method = "get">General Practitioner </a></li>
-                      <li><a href="#">Neurology</a></li>
-                      <li><a href="#">Urology</a></li>
-                      <li><a href="#">Cardiology</a></li>
-                      <li><a href="#">Paediatrics</a></li>
-                      <li><a href="#">Obs&Gyn</a></li>
-                      <li><a href="#">Geriatrics</a></li>
-                    </ul>
+                    <select id = "selected_options" name = "selected_options" class="dropdown-menu">
+                      <option value = "General Practitioner">General Practitioner </option>
+                      <option value = "Neurology">Neurology </option>
+                      <option value = "Urology">Urology </option>
+                      <option value ="Cardiology">Cardiology </option>
+                      <option value ="Paediatrics">Paediatrics </option>
+                      <option value ="Obs&Gyn">Obs&Gyn </option>
+                      <option value ="Geriatrics">Geriatrics </option>
+                    </select>
+                    <script> 
+                      var select = document.getElementById("selected_options"); 
+                      select.addEventListener("change", function() { 
+                        window.location.href = "General.php?selected_options=" + select.value; 
+                      }); 
+                    </script>
                   </li>
                   <li><a href="about-us-patient-view.html">About Us</a></li>
                   <li><a href="contact-us-patient-view.html">Contact Us</a></li>
