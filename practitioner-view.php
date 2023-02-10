@@ -15,31 +15,6 @@
     {
         die("Connection failed!" . mysqli_connect_error());
     }
-    // $t = "";
-    // if($selected_options == 'General Practitioner'){
-    //     $t = 'option1';
-    // }
-
-    // if($selected_options == 'Neurology'){
-    //     $t = 'option2';
-    // }
-    // if($selected_options == 'Urology'){
-    //     $t = 'option3';
-    // }
-    // if($selected_options == 'Cardiology'){
-    //     $t = 'option4';
-    // }
-    // if($selected_options == 'Paediatrics'){
-    //     $t = 'option5';
-    // }
-    // if($selected_options == 'Obs&Gyn'){
-    //     $t = 'option6';
-    // }
-    // if($selected_options == 'Geriatrics'){
-    //     $t = 'option7';
-    // }
-    // echo $selected_options . "<br>" . $t;
-
     
     $sql = "SELECT first_name, last_name, dob, disabilities, description, phone, email FROM patient_table";
     $rs = mysqli_query($con, $sql);
