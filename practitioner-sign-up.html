@@ -21,8 +21,18 @@
     <label for="dob">Date of Birth:</label>
     <input type="date" id ="dob" name="dob" required>
     <br><br>
-    <label for="disabilities">Enter disabilities:</label>
-    <input type="disabilities" id ="disabilities" name="disabilities" required>
+    <label for="disabilities">Enter specialities:</label>
+    <form action="patient-sign-up.php" method="post">
+        <select multiple name="selected_options[]">
+          <option value="option1">Hearing</option>
+          <option value="option2">Eyesight</option>
+          <option value="option3">Mobility</option>
+          <option value="option3">Mental Impairments</option>
+          <option value="option3">Speech</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+      
     <br><br>
     <label for="phone">Contact number:</label>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required><br><br>
