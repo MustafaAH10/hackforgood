@@ -64,7 +64,7 @@
               <option value="option3">Speech</option>
             </select>
           </form>
-          
+          <br><br>
           <label for="experience">Number of Years of Experience:</label>
             <select id="experience" name="experience">
               <option value="1">0-5</option>
@@ -72,28 +72,35 @@
               <option value="3">10 or more</option>
             </select>
           <br><br>
-  <label for="phone">Practicing Certificate No:</label>
-    <input type="tel" id="Certificate" name="Certificate" pattern="[0-9]{8}" required><br><br>
-      </section>
+          <label for="phone">Practicing Certificate No:</label>
+              <input type="tel" id="Certificate" name="Certificate" pattern="[0-9]{8}" required>
+              <br><br>
+              <form action="your_php_script.php" method="post" enctype="multipart/form-data">
+                <p>Please upload your Practicing Certificate.</p>
+                <label for="file">Choose a file to upload:</label>
+                <input type="file" id="file" name="file">
+                <br><br>
+                <input type="submit" value="Upload">
+              </form>
+          <br><br>
+          <label for="description"> Description: </label>
+            <textarea id="description" name="description" placeholder="Give a brief description of your skillsets and experience; what kind of access arrangements you are willing to accomodate." style="height: 50px; width: 500px;" required></textarea>        
+          <br><br>
+       </section>
     
-    
-    <br><br>
-  
-
-
-
-
-    <label for="description"> Description: </label>
-    <textarea id="description" name="description" placeholder="Give a brief description of your skillsets and experience; what kind of access arrangements you are willing to accomodate." style="height: 50px; width: 500px;" required></textarea>        
-    <br><br>
-    <label for="phone">Contact number:</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required><br><br>
-      <label for="email">Email:</label>
-      <input type="email" id ="email" name="email" placeholder="xyz@gmail.com" required>
-      <br><br>
-      <label for="password">Create Password:</label>
-      <input type="password" id="password" name="password" required>
-      <br><br>
+       <section>
+        <header>
+          <h2>Account Details</h2>
+        </header>
+        <label for="phone">Contact number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required><br><br>
+        <label for="email">Email:</label>
+          <input type="email" id ="email" name="email" placeholder="xyz@gmail.com" required>
+        <br><br>
+        <label for="password">Create Password:</label>
+          <input type="password" id="password" name="password" required>
+       </section>
+       <br><br>
       <input type="submit" id="submit" name="submit" value="Sign Up">
       <input type="reset" value="Reset">
 
