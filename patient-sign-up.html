@@ -21,7 +21,7 @@
     <label for="dob">Date of Birth:</label>
     <input type="date" id ="dob" name="dob" required>
     <br><br>
-    <label for="disabilities">Enter disabilities:</label>
+    <label for="disabilities">Enter Impairments applicable:</label>
     <form action="patient-sign-up.php" method="post">
         <select multiple name="selected_options[]">
           <option value="option1">Hearing</option>
@@ -30,9 +30,10 @@
           <option value="option3">Mental Impairments</option>
           <option value="option3">Speech</option>
         </select>
-        <input type="submit" value="Submit">
       </form>
-      
+    <br><br>
+    <label for="description"> Description: </label>
+    <textarea id="description" name="description" placeholder="Give a brief description of your needs. Detail your symptoms how long you have been experiencing them; what kind of doctor you are looking for, and any access arrangements you require." style="height: 50px; width: 500px;" required></textarea>        
     <br><br>
     <label for="phone">Contact number:</label>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required><br><br>

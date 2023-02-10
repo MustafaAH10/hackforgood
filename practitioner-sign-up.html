@@ -30,9 +30,52 @@
           <option value="option3">Mental Impairments</option>
           <option value="option3">Speech</option>
         </select>
-        <input type="submit" value="Submit">
       </form>
-      
+    <br><br>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="">Select your gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+    <label for="languages">Languages Spoken:</label>
+      <select multiple name="selected_languages[]">
+      <option value="English">English</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Malay">Malay</option>
+      <option value="Tamil">Tamil</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+  <div id="otherLanguage" style="display:none;">
+  <label for="otherLanguageInput">Please specify:</label>
+  <input type="text" id="otherLanguageInput" name="otherLanguageInput">
+  </div>
+  <br><br>
+
+  <label for="experience">Number of Years of Experience:</label>
+    <select id="experience" name="experience">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10 or more</option>
+    </select>
+  <br><br>
+  <label for="phone">Practicing Certificate No:</label>
+    <input type="tel" id="Certificate" name="Certificate" pattern="[0-9]{8}" required><br><br>
+
+
+    <label for="description"> Description: </label>
+    <textarea id="description" name="description" placeholder="Give a brief description of your needs. Detail your symptoms how long you have been experiencing them; what kind of doctor you are looking for, and any access arrangements you require." style="height: 50px; width: 500px;" required></textarea>        
     <br><br>
     <label for="phone">Contact number:</label>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required><br><br>
