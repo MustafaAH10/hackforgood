@@ -14,14 +14,14 @@
                   <li><a href="patient-view.html">Home</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Listings</a>
-                    <select id = "selected_options" name = "selected_options" class="dropdown-menu">
-                      <option value = "General Practitioner">General Practitioner </option>
-                      <option value = "Neurology">Neurology </option>
-                      <option value = "Urology">Urology </option>
-                      <option value ="Cardiology">Cardiology </option>
-                      <option value ="Paediatrics">Paediatrics </option>
-                      <option value ="Obs&Gyn">Obs&Gyn </option>
-                      <option value ="Geriatrics">Geriatrics </option>
+                    <select action = "general.php" method = "get" id = "selected_options" name = "selected_options" class="dropdown-menu">
+                      <option id = "selected_options" name = "selected_options" value = "General Practitioner">General Practitioner </option>
+                      <option id = "selected_options" name = "selected_options" value = "Neurology">Neurology </option>
+                      <option id = "selected_options" name = "selected_options" value = "Urology">Urology </option>
+                      <option id = "selected_options" name = "selected_options" value ="Cardiology">Cardiology </option>
+                      <option id = "selected_options" name = "selected_options" value ="Paediatrics">Paediatrics </option>
+                      <option id = "selected_options" name = "selected_options" value ="Obs&Gyn">Obs&Gyn </option>
+                      <option id = "selected_options" name = "selected_options" value ="Geriatrics">Geriatrics </option>
                     </select>
                     <script> 
                       var select = document.getElementById("selected_options"); 
