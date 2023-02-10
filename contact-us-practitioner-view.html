@@ -14,27 +14,9 @@
     <div class = "navbar" style="text-align: justify;">
     <nav>
       <ul>
-        <li><a href="patient-view.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Listings</a>
-          <select action = "general.php" method = "get" id = "selected_options" name = "selected_options" class="dropdown-menu">
-            <option id = "selected_options" name = "selected_options" value = "General Practitioner">General Practitioner </option>
-            <option id = "selected_options" name = "selected_options" value = "Neurology">Neurology </option>
-            <option id = "selected_options" name = "selected_options" value = "Urology">Urology </option>
-            <option id = "selected_options" name = "selected_options" value ="Cardiology">Cardiology </option>
-            <option id = "selected_options" name = "selected_options" value ="Paediatrics">Paediatrics </option>
-            <option id = "selected_options" name = "selected_options" value ="Obs&Gyn">Obs&Gyn </option>
-            <option id = "selected_options" name = "selected_options" value ="Geriatrics">Geriatrics </option>
-          </select>
-          <script> 
-            var select = document.getElementById("selected_options"); 
-            select.addEventListener("change", function() { 
-              window.location.href = "General.php?selected_options=" + select.value; 
-            }); 
-          </script>
-        </li>
-        <li><a href="about-us-patient-view.html">About Us</a></li>
-        <li><a href="contact-us-patient-view.html">Contact Us</a></li>
+        <li><a href="practitioner-view.html">Home</a></li>
+        <li><a href="about-us-practitioner-view.html">About Us</a></li>
+        <li><a href="contact-us-practitioner-view.html">Contact Us</a></li>
       </ul>
     </nav>
   </div>
