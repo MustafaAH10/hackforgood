@@ -12,6 +12,10 @@
 
   <main>
     <form action = "patient-sign-up.php" method = "post">
+      <section>
+        <header>
+          <h2>Personal Details</h2>
+        </header>
     <label for="first_name">First Name:</label>
     <input type="first_name" id ="first_name" name="first_name" required>
     <br><br>
@@ -21,12 +25,29 @@
     <label for="dob">Date of Birth:</label>
     <input type="date" id ="dob" name="dob" required>
     <br><br>
-    <label for="disabilities">Enter Impairments applicable:</label>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+    <br><br>
+    <div style="text-align:justify;">
+      <label for="disabilities">Enter Impairments applicable:</label>
+    </div>
     <textarea id="disabilities" name="disabilities" placeholder="Give a brief description of your impairments. Detail how long you have been dealing with the impairments, and the medications that you are currently taking. Add any access arrangements you require." style="height: 50px; width: 500px;" required></textarea>
     <br><br>
+    <div style="text-align:justify;">
     <label for="description"> Description: </label>
+    </div>
     <textarea id="description" name="description" placeholder="Give a brief description of your needs. Detail your symptoms how long you have been experiencing them; what kind of doctor you are looking for." style="height: 50px; width: 500px;" required></textarea>        
     <br><br>
+    </section>
+    <section>
+      <header>
+        <h2>Account Details</h2>
+      </header>
     <label for="phone">Contact number:</label>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required><br><br>
       <label for="email">Email:</label>
@@ -35,6 +56,7 @@
       <label for="password">Create Password:</label>
       <input type="password" id="password" name="password" required>
       <br><br>
+    </section>
       <input type="submit" id="submit" name="submit" value="Sign Up">
       <input type="reset" value="Reset">
 
