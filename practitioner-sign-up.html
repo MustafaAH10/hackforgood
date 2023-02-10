@@ -11,7 +11,7 @@
   </header>
 
   <main>
-    <form action = "employer-sign-up.php" method = "post">
+    <form action = "practitioner-sign-up.php" method = "post">
       <section>
         <header>
           <h2>Personal Details</h2>
@@ -36,7 +36,7 @@
           <div style="text-align: justify;">
             <label for="languages">Languages Spoken:</label>
           </div>
-            <select multiple name="selected_languages[]">
+            <select multiple name="selected_languages">
             <option value="English">English</option>
             <option value="Chinese">Chinese</option>
             <option value="Malay">Malay</option>
@@ -59,8 +59,8 @@
         <div style="text-align:justify;">
         <label for="disabilities">Enter specialities:</label>
       </div>
-        <form action="patient-sign-up.php" method="post">
-            <select multiple name="selected_options[]">
+        
+            <select multiple name="selected_options">
               <option value="option1">Hearing</option>
               <option value="option2">Eyesight</option>
               <option value="option3">Mobility</option>
@@ -79,7 +79,6 @@
           <label for="phone">Practicing Certificate No:</label>
               <input type="tel" id="Certificate" name="Certificate" pattern="[0-9]{8}" required>
               <br><br>
-              <form action="your_php_script.php" method="post" enctype="multipart/form-data">
                 <p>Please upload your Practicing Certificate.</p>
                 <label for="file">Choose a file to upload:</label>
                 <input type="file" id="file" name="file">
@@ -92,7 +91,7 @@
           </div>
             <textarea id="description" name="description" placeholder="Give a brief description of your skillsets and experience; what kind of access arrangements you are willing to accomodate." style="height: 50px; width: 500px;" required></textarea>        
           <br><br>
-       </section>
+       
     
        <section>
         <header>
