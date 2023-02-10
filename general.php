@@ -50,7 +50,11 @@
     while($row = mysqli_fetch_assoc($rs)) {
         echo "NAME :{$row['first_name']} ". 
         "{$row['last_name']} <br> ".
+        "SPECIALIZATION: {$row['selected_options']}  <br>".
+        "YEARS OF EXPERIENCE: {$row['experience']}  <br>".
         "GENDER : {$row['gender']} <br> ".
+        "CONTACT : {$row['phone']} <br> ".
+        "EMAIL : {$row['email']} <br> ".
         "--------------------------------<br>";
     } 
 
