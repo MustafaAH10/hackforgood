@@ -4,6 +4,21 @@
   background-attachment: fixed;
   background-size: cover;
 }
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
 
 main {
     display: flex;
