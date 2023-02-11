@@ -46,8 +46,6 @@ We have implemented the popular LAMP Stack.
 ![image](https://user-images.githubusercontent.com/56750694/218235787-496b7f79-79ec-4261-93dd-44736fa898b6.png)
 
 
-#### License 
-
 #### Contact
 Mustafa Anis Hussain
 
@@ -56,5 +54,3 @@ Mohammed Faiz
 Khaleelur Rahman
 
 Adarsh Aravinth
-#### Acknowledgements
-
