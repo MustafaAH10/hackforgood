@@ -1,4 +1,5 @@
 **SGEnable Health Portal**
+
 SGEnable Health Portal is a 
 
 **Built With**
@@ -14,6 +15,7 @@ SGEnable Health Portal is a
 2. Add data into the tables, and voila you are good to use the Health Portal. 
 
 **Roadmap**
+
 We are keen on updating our portal from time-to-time and a few additions we would like to make in the future: 
 1. Add a chat feature 
 2. Sync database to a cloud server
