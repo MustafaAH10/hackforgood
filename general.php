@@ -1,7 +1,8 @@
 <?php
     if(isset($_GET["selected_options"])) {
         $selected_options = $_GET['selected_options'];
-    }    
+    }
+    
     $host = "localhost";
     $username = "root";
     $password = "";
@@ -40,8 +41,19 @@
     }
     // echo $selected_options . "<br>" . $t;
 
+    // $h = "";
+    // if($experience == '0-5'){
+    //     $h = '1';
+    // }
+    // if($experience == '5-10'){
+    //     $h = '2';
+    // }
+    // if($experience == '10 or more'){
+    //     $h = '3';
+    // }
+
     
-    $sql = "SELECT first_name, last_name, gender FROM practitioner_table WHERE selected_options = '$t'";
+    $sql = "SELECT first_name, last_name, gender, selected_options, gender, phone, email FROM practitioner_table WHERE selected_options = '$t'";
     // WHERE selected_options = '$selected_options'"
     $rs = mysqli_query($con, $sql);
     if(! $rs ) {
@@ -50,8 +62,7 @@
     while($row = mysqli_fetch_assoc($rs)) {
         echo "NAME :{$row['first_name']} ". 
         "{$row['last_name']} <br> ".
-        "SPECIALIZATION: {$row['selected_options']}  <br>".
-        "YEARS OF EXPERIENCE: {$row['experience']}  <br>".
+        "SPECIALIZATION: {$selected_options}  <br>".
         "GENDER : {$row['gender']} <br> ".
         "CONTACT : {$row['phone']} <br> ".
         "EMAIL : {$row['email']} <br> ".
@@ -59,6 +70,7 @@
     } 
 
     echo "Fetched data successfully\n";
+
 
     mysqli_close($con);
 

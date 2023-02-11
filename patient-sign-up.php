@@ -34,7 +34,7 @@
     $rs = mysqli_query($con, $sql);
     if($rs)
     {
-        echo "Entries added!";
+        echo "Patients signed up successfully!";
     }
   
     
