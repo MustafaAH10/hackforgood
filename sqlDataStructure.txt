@@ -1,0 +1,25 @@
+patient
+|
+- patient_table 
+	first_name (VARCHAR)
+	last_name (VARCHAR)
+	dob (VARCHAR)
+	disabilities (VARCHAR)
+	description (VARCHAR)
+	phone (INT)
+	email (VARCHAR)
+	pwd (VARCHAR)
+
+- practitioner_table
+	first_name (VARCHAR)
+	last_name (VARCHAR)
+	dob (VARCHAR)
+	gender (VARCHAR)
+	selected_languages (VARCHAR)
+	selected_options (VARCHAR)
+	experience (VARCHAR)
+	Ceritificate (VARCHAR)(FILE UPLOAD)
+	description (VARCHAR)
+	phone (INT)
+	email (VARCHAR)
+	password (VARCHAR)
