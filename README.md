@@ -48,6 +48,12 @@ We have implemented the popular LAMP Stack.
 #### License 
 
 #### Contact
+Mustafa Anis Hussain
 
+Mohammed Faiz
+
+Khaleelur Rahman
+
+Adarsh Aravinth
 #### Acknowledgements
 
