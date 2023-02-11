@@ -24,7 +24,8 @@ Patients with disabilites can create a 'patient' account, through which they can
 
 #### Usage
 1. Create a database and the tables needed for the project in MySQL using phpmyadmin (Refer to sqlDataStructure.txt)
-2. Add data into the tables, and voila you are good to use the Health Portal. 
+2. Add data into the tables
+3. Run 'start index.html' on your terminal and voila you are good to use the Health Portal. 
 
 #### Roadmap 
 
