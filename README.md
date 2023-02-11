@@ -19,7 +19,7 @@ SGEnable Health Portal is a
 We are keen on updating our portal from time-to-time and a few additions we would like to make in the future: 
 1. Add a chat feature 
 2. Sync database to a cloud server
-3. 
+3. Error Handling
 
 **Contributing**
 
